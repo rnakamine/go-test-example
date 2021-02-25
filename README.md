@@ -2,7 +2,7 @@
 This repository is for testing golang.
 
 ## Usage
-exectute test
+Run test
 ```
 $ go test -v
 === RUN   TestAdd
@@ -16,7 +16,7 @@ $ go test -v
 PASS
 ```
 
-exectute benchmark
+Run benchmark
 ```
 goos: darwin
 goarch: amd64

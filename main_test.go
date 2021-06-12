@@ -8,10 +8,8 @@ func Add(a, b int) int {
 
 func TestAdd(t *testing.T) {
 	tests := []struct {
-		name string
-		a    int
-		b    int
-		want int
+		name         string
+		a, b, expect int
 	}{
 		{"1+2", 1, 2, 3},
 		{"2+5", 2, 5, 7},
@@ -21,8 +19,8 @@ func TestAdd(t *testing.T) {
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			got := Add(tt.a, tt.b)
-			if tt.want != got {
-				t.Errorf("unexpected result. want%d, got=%d", tt.want, got)
+			if tt.expect != got {
+				t.Errorf("unexpected result. want%d, got=%d", tt.expect, got)
 			}
 		})
 	}
